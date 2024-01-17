@@ -8,6 +8,7 @@ def get_credentials() -> dict:
             except ValueError:
                 print('Add your email and password in credentials file')
                 exit(0)
-            credentials[key] = value.rsplit(" \n")
+                
+            credentials[key.strip()] = value.strip()
 
     return credentials

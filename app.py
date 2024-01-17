@@ -9,3 +9,4 @@ credentials = credential.get_credentials()
 bot = tb.TwitterBot(credentials["email"], credentials["password"])
 
 bot.login()
+print("Login successful")
